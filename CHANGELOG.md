@@ -1,3 +1,7 @@
+# v0.3.6 (22.04.2020)
+
+- feature: Store parameter mainCompanyId in session during request_phase
+
 # v0.3.5 (07.06.2020)
 
 - bugfix: Info from decoded id_token is not exposed into `request.env['omniauth.auth']` [#61](https://github.com/m0n9oose/omniauth_openid_connect/pull/61)
