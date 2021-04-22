@@ -110,6 +110,8 @@ module OmniAuth
 
       def request_phase
         options.issuer = issuer if options.issuer.to_s.empty?
+        # Store extra param
+        env['rack.session'][:main_company_idp_id] = params["mainCompanyId"]
         discover!
         redirect authorize_uri
       end
